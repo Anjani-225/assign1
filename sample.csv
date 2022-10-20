@@ -1,4 +1,6 @@
-id,name,description,createdAt
-1,Node.js,JavaScript runtime environment,2019-09-03
-2,Vue.js,JavaScript Framework for building UI,2019-09-06
-3,Angular.js,Platform for building mobile & desktop web app,2019-09-09
+EmployeeID,FirstName,MiddleName,LastName,Email,DateOfBirth,Gender
+100,Alok,d,singh,a@gmailcom,20/4/95,Male
+101,john,f,kennedy,j@yahoocom,25/3/77,Male
+102,joy,to,world,joy@gmailcom,3/2/98,Female
+103,Ananya,k,singh,any@duckcom,2/1/94,Female
+104,Victor,k,west,v@gmailcom,2/7/96,Male
