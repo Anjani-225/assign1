@@ -1,0 +1,10 @@
+A very important component of data intensive applications like insurance is the data ingestion component. Wrong data can always cause problems in other related components. Data should be cleaned in this stage as much as possible.  For this assignment, you must write a simple backend for an insurance data ingestion system in a language of your choice and any RDBMS which does the following functions: 
+Provide HTTP REST endpoints to access functionalities following restful practices 
+/organisations POST API to create organisations  /organisations/{orgId}/members/upload POST API to upload a CSV file containing employees of the organisation. This CSV file need not be stored but the employee data should be extracted, validated and stored in the database for further operations. The CSV uploader must be repeatable and should not cause duplicates (based on Employee ID). The CSV file looks as shown below.   
+
+ The following data validations should be applied before persisting records in the database. If validations fail, that row will not be stored. The response should contain a list of errors with their row numbers if any, else return empty list. 
+Employee ID: integer (Mandatory and must be unique within the organisation)
+Email: standard email format (Check for accepted email address format based on RFC) (Non-Mandatory)
+FirstName, MiddleName, LastName can have spaces and alphabets (lower or upper case), but should have at least 3 alphabetic characters. MiddleName is non-mandatory/nullable.
+Date of birth - dd/MM/yyyy format -> 01/09/1991 [Mandatory]
+Gender - from a list like this - [Male, Female, Other] [Mandatory] 
